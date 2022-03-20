@@ -42,9 +42,9 @@ export default class Planets {
   jupiterAge() {
     this.jupiterAge = Math.round(this.age * 11.68);
     if (this.jupiterAge < this.lifeExp) {
-      this.jupiterLifeExp = `Wow you still have ${(this.lifeExp * this.jupiter) - this.jupiterAge} years. Congrats!! `
+      this.jupiterLifeExp = `Oh my ${(this.lifeExp * this.jupiter) - this.jupiterAge} years. Congrats!! `
     } else {
-    this.jupiterLifeExp = `You are lucky to be alive since you have exceeded your life expectancy by `
+    this.jupiterLifeExp = `You are lucky to be alive since you have exceeded your life expectancy by ${this.jupiterAge - 50}`
     };
   }
 }  

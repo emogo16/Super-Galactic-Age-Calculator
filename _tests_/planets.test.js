@@ -54,5 +54,12 @@ describe("Planets", () => {
     expect(planets.marsAge).toEqual(94);
     expect(planets.marsLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 44 years in mars" );
   });
+  test ("#9 It will return the correct age in `Male` in Jupiter years.", () => {
+    const planets = new Planets(50, "Male");
+    planets.lifeExpectancy();
+    planets.jupiterAge();
+    expect(planets.jupiterAge).toEqual(584);
+    expect(planets.jupiterLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 534" );
+  });
 
 });
