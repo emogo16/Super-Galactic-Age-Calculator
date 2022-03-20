@@ -40,5 +40,19 @@ describe("Planets", () => {
     expect(planets.venusAge).toEqual(37);
     expect(planets.venusLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 7 years" );
   });
+  test ("#7 It will return the correct age in `Male` in Mars years.", () => {
+    const planets = new Planets(50, "Male");
+    planets.lifeExpectancy();
+    planets.marsAge();
+    expect(planets.marsAge).toEqual(94);
+    expect(planets.marsLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 44 years in mars" );
+  });
+  test ("#8 It will return the correct age in `Female` in Mars years.", () => {
+    const planets = new Planets(50, "Male");
+    planets.lifeExpectancy();
+    planets.marsAge();
+    expect(planets.marsAge).toEqual(94);
+    expect(planets.marsLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 44 years in mars" );
+  });
 
 });
