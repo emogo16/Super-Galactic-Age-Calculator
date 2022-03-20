@@ -13,8 +13,10 @@ export default class Planets {
   mercuryAge() {
     this.mercuryAge = Math.round(this.age * 0.24);
     if (this.mercuryAge < this.lifeExp) {
-      this.mercuryLifeExp = `Wow you must be really healthy because you have passed your life expectancy about ${(this.lifeExp * 0.24) - this.mercuryAge} years. Congrats!! `
-    // } else {
+      this.mercuryLifeExp = `Wow you still have ${(this.lifeExp * 0.24) - this.mercuryAge} years. Congrats!! `
+    } else {
+    this.mercuryLifeExp = `Your estimated life here in Mercury is approximately 80 years!`
     };
   }
 }  
+// ${this.lifeExpectancy - this.mercuryAge}
