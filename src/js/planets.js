@@ -26,9 +26,9 @@ export default class Planets {
   venusAge() {
     this.venusAge = Math.round(this.age * 0.62);
     if (this.venusAge < this.lifeExp) {
-      this.venusLifeExp = `Wow you still have ${(this.lifeExp * this.venus) - this.venusAge} years. Congrats!! `
+      this.venusLifeExp = `Wow you have gone over your life expectancy by ${(this.lifeExp * this.venus) - this.venusAge} years. Congrats!! `
     } else {
-    this.venusLifeExp = `You are lucky to be alive since you have exceeded your life expectancy by ${this.lifeExpectancy - this.mercuryAge} years`
+    this.venusLifeExp = `You are lucky to be alive since you have exceeded your life expectancy by ${this.venusAge - 30} years`
     };
   }
   marsAge() {
@@ -36,7 +36,7 @@ export default class Planets {
     if (this.marsAge < this.lifeExp) {
       this.marsLifeExp = `Wow you still have ${(this.lifeExp * this.mars) - this.marsAge} years. Congrats!! `
     } else {
-    this.marsLifeExp = `You are lucky to be alive since you have exceeded your life expectancy by `
+    this.marsLifeExp = `You are lucky to be alive since you have exceeded your life expectancy by ${this.lifeExpectancy - this.mercuryAge} years`
     };
   }
   jupiterAge() {
