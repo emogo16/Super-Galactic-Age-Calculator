@@ -61,5 +61,12 @@ describe("Planets", () => {
     expect(planets.jupiterAge).toEqual(584);
     expect(planets.jupiterLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 534" );
   });
+  test ("#10 It will return the correct age in `Female` in Jupiter years.", () => {
+    const planets = new Planets(50, "Female");
+    planets.lifeExpectancy();
+    planets.jupiterAge();
+    expect(planets.jupiterAge).toEqual(584);
+    expect(planets.jupiterLifeExp).toEqual( "You are lucky to be alive since you have exceeded your life expectancy by 534" );
+  });
 
 });
