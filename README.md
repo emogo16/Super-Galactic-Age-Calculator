@@ -13,7 +13,7 @@
 
 ## Description
 
-_This will calculate your age based on planets_
+_This will calculate your age based on planets and tell you if you have exceeded your life expectancy and by how much. 
 
 ## Setup/Installation Requirements
 
@@ -31,9 +31,6 @@ You will want to open the index.html file in your browser
 ## Known Bugs
 
 There is no UI at the moment.
-
-## Tests
-
 
 
 ## License
